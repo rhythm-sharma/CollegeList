@@ -1,0 +1,33 @@
+:root {
+  --greyish-brown: #444444;
+}
+
+.title {
+  color: var(--greyish-brown);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-left: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 20px 40px 20px;
+}
+
+.college-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.college-card {
+  flex: 0 50%;
+}
+
+@media screen and (max-width: 1280px) {
+  .college-card {
+    flex: 0 100%;
+  }
+}
